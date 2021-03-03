@@ -149,6 +149,7 @@ function ub_include_block_attribute_css() {
         if(isset($attributes) && isset($attributes['blockID']) && $attributes['blockID'] != ''){
             switch ($block['blockName']){
                 default:
+                case 'ub/advanced-video':
                     //nothing could be done
                     break;
                 case 'ub/button':
@@ -850,3 +851,6 @@ require_once plugin_dir_path( __FILE__ ) . 'blocks/styled-list/block.php';
 
 // How To
 require_once plugin_dir_path( __FILE__ ) . 'blocks/how-to/block.php';
+
+// Advanced Video
+require_once plugin_dir_path( __FILE__ ) . 'blocks/advanced-video/block.php';
