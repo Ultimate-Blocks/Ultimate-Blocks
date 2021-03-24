@@ -151,6 +151,12 @@ function ub_include_block_attribute_css() {
                 default:
                 case 'ub/advanced-video':
                     //nothing could be done
+                    $prefix = '#ub-advanced-video-' . $attributes['blockID'];
+                    if($attributes['borderSize'] > 0){
+                        $blockStylesheets .= $prefix . '{' .
+                            'border: ' . $attributes['borderSize'] . 'px ' . $attributes['borderStyle'] . ' ' . $attributes['borderColor'] . ';' . PHP_EOL .
+                        '}';
+                    }
                     break;
                 case 'ub/button':
                     $prefix = '#ub-button-' . $attributes['blockID'];

@@ -79,6 +79,18 @@ $defaultValues = array(
             'width' => array(
                 'type' => 'number',
                 'default' => 0,
+            ),
+            'borderSize' => array(
+                'type' => 'number',
+                'default' => 0,
+            ),
+            'borderStyle' => array(
+                'type' => 'string',
+                'default' => ''
+            ),
+            'borderColor' => array(
+                'type' => 'string',
+                'default' => ''
             )
         )
     ),
